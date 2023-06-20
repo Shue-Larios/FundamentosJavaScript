@@ -1,6 +1,12 @@
 // Imports y Exports
-import { sumar } from "./funciones.js"
+// de forma nativa requiero la extension si yo hago el archivo ponerle .js
 
-const resultado = suma(20, 30)
+import { restar, sumar } from "./funciones.js"
 
-console.log(resultado)
+const suma = sumar(20, 30)
+
+const resta = restar(20, 30)
+
+
+console.log(suma)
+console.log(resta)

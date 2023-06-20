@@ -1,7 +1,10 @@
 // Eventos del DOM - Submit
 
+// seleccionamos el formulario por el id
+
 const formulario = document.querySelector('#formulario')
 formulario.addEventListener('submit', e => {
+    // previene la accion por default que es enviar
     e.preventDefault()
 
     const nombre = document.querySelector('.nombre').value
@@ -12,4 +15,4 @@ formulario.addEventListener('submit', e => {
     } else {
         console.log('Todo bien, enviando...')
     }
-})
+}) 

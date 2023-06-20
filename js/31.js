@@ -28,6 +28,7 @@ const consultarAPI2 = async () => {
 
     const inicio = performance.now()
 
+    // asi hago multiples llamados al mismo tiempo esta es mas rapida por el performace
     const [respuesta, respuesta2 ] = await Promise.all([ fetch(url), fetch(url2) ])
     const resultado = await respuesta.json()
     const resultado2 = await respuesta2.json()
